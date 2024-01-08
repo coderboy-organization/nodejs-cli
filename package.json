@@ -1,23 +1,31 @@
 {
   "name": "nodejs-cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "description",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start" :"pnpm build && node cli.js",
+    "dev": "nodemon cli.ts"
   },
   "keywords": [],
   "author": "@devlopersabbir",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "@adonisjs/ace": "^13.0.0"
+    "@adonisjs/ace": "12.3.2-6",
+    "@adonisjs/core": "^6.2.0",
+    "inquirer": "^9.2.12"
   },
   "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.10.7",
     "eslint": "^8.56.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-standard": "^5.0.0"
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }

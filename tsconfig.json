@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "esModuleInterop": true,
-    "outDir": "dist",
-    "module": "CommonJS"
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "esm": true
   }
 }
